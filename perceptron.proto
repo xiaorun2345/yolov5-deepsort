@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package nebulalink.perceptron;
+
+//defined struct to contain the vector or point information
+
+message Point2 {
+  float x = 1;
+  float y = 2;
+}
+
+message Point3 {
+  float x = 1;
+  float y = 2;
+  float z = 3;
+}
+
+message Perceptron {
+
+  string Devide_Id = 1;  // 设备号.
+  bool  Devide_Is_True = 2;  // 判断设备数据的有效性.
+  int32 Number_Frame = 3;  // 帧的序列号.
+
+  enum Type {
+      UNKNOWN = 0; // 未知
+      PEDESTRIAN = 1; // 人
+      BICYCLE = 2;  // 非机动车
+      CAR = 3; // 小汽车
+      TRUCK_BUS = 4;  // 大车，如果不能区分大小车，就把所有机动车归为CAR = 3.
+    };
+  Type Object_Class_Type = 4;  // 目标种类.
+  int32 Object_Id = 5;  // 目标Id.
+  Point3 Point3f  = 6;  // 目标的几何中心，单位为米.
+  float Object_Confidence = 7;  // 目标置信度，如果为int32的话，最后给*0.01转换成float给出，并给出参考区间.
+  float Object_Speed = 8; // 目标速度，单位 m/s.
+  float Object_acceleration = 9;  // 目标加速度, 单位 m/s2.
+  float Object_Width = 10; // 目标宽度, 单位 m/s..
+  float Object_Length = 11; // 目标长度, 单位 m/s..
+  float Object_Height = 12; // 目标高度， 单位 m/s..
+  double Object_Longitude = 13; // 经度，v2x国标规定为double类型.
+  double Object_Latitude = 14; // 维度， v2x国标规定为double类型.
+  enum NS {
+      N = 0; // 北纬
+      S = 1;// 南纬
+    };
+  NS Object_NS = 15; // 南北纬.
+  enum EW {
+      E = 0; // 东经
+      W = 1;// 西经
+    };
+  EW Object_WE = 16; // 东西经.
+  int64 Time_stamp = 17;  // 时间戳，到1970年1月1日0:00的毫秒数，sint32最多10位，只能用int64表示.
+  float Object_Direction = 18; // 全局坐标系下物体的朝向单位向量，平行于物体包围盒的长边，车头朝向给不出可以预留此字段.
+  float Object_Yaw = 19; // 全局坐标系下物体的朝向航向角，以度为单位.
+  bool is_tracker = 20; // 物体是否被跟踪成功，如果没有，那么说明跟踪信息是不可靠的，一般都要求目标被追踪，字段暂且为1.
+}
+
+message PerceptronSet {
+  repeated Perceptron perceptron = 1;  // Array of percepted obstacles
+}
+
+
+
+

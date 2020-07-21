@@ -1,0 +1,33 @@
+2020/04/23 21:31:27-ERROR: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 220, Traceback (most recent call last):
+  File "/usr/lib/python3.5/configparser.py", line 786, in get
+    value = d[option]
+  File "/usr/lib/python3.5/collections/__init__.py", line 878, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/usr/lib/python3.5/collections/__init__.py", line 870, in __missing__
+    raise KeyError(key)
+KeyError: 'cam_sensor_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py", line 187, in <module>
+    Sensor_ID, local_IP, local_port, heart_port, cameraAddr, cam_IP, pls_xy, real_xy, RSU_IP, RSU_port, is_show= parse_conf('NL_config', idx)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/parse_data.py", line 201, in parse_conf
+    Sensor_ID = conf.get(filename, "cam_sensor_id")
+  File "/usr/lib/python3.5/configparser.py", line 789, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'cam_sensor_id' in section: 'NL_config'
+
+2020/04/23 21:35:48-ERROR: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 92, Traceback (most recent call last):
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py", line 83, in run
+    resultSender(rgb_image, outputs_tracking, M_real, self.Sensor_ID, self.udpClient, self.addr)
+TypeError: resultSender() takes 5 positional arguments but 6 were given
+
+2020/04/23 21:35:48-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 99, Detect Thread stop.
+2020/04/23 21:35:48-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 130, FrameReadLoop thread stop.
+2020/04/23 21:36:19-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 116, try to cap the camera
+2020/04/23 21:36:24-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 99, Detect Thread stop.
+2020/04/23 21:36:24-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 130, FrameReadLoop thread stop.
+2020/04/23 21:37:05-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 99, Detect Thread stop.
+2020/04/23 21:37:05-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 130, FrameReadLoop thread stop.
+2020/04/23 21:37:28-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 172, heartbeat thread stop.

@@ -1,0 +1,13 @@
+2020/06/23 17:39:56-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/06/23 17:40:02-ERROR: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 202, Traceback (most recent call last):
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py", line 199, in <module>
+    cameraDetectionDemo(416, pls_xy, real_xy, jsonName, Sensor_ID, udpClient, addr, cam_IP)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py", line 160, in cameraDetectionDemo
+    resultSender(outputs_tracking, h_inv, Sensor_ID, udpClient, addr, detect_time)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/data_sender.py", line 106, in resultSender
+    perceptron.Point2f.x = (track[0] + track[2]) / 2.0  # 目标的几何中心，单位为米.  用bbox centerX centerY width height
+AttributeError: Point2f
+
+2020/06/23 17:40:02-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/06/23 17:40:31-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/06/23 17:40:39-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.

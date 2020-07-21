@@ -1,0 +1,23 @@
+2020/06/22 15:40:38-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/06/22 15:42:13-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/06/22 16:15:46-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/06/22 16:16:27-ERROR: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 199, Traceback (most recent call last):
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py", line 199, in <module>
+    cameraDetectionDemo(416, pls_xy, real_xy, jsonName, Sensor_ID, udpClient, addr, cam_IP)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py", line 160, in cameraDetectionDemo
+    resultSender(outputs_tracking, h_inv, Sensor_ID, udpClient, addr, detect_time)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/data_sender.py", line 126, in resultSender
+    center3D = np.matmul(h_inv, o3dPtMat)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/data_sender.py", line 126, in resultSender
+    center3D = np.matmul(h_inv, o3dPtMat)
+  File "/home/user/tools/pycharm-community-2019.1.3/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 727, in trace_dispatch
+    self.do_wait_suspend(thread, frame, event, arg)
+  File "/home/user/tools/pycharm-community-2019.1.3/helpers/pydev/_pydevd_bundle/pydevd_frame.py", line 125, in do_wait_suspend
+    self._args[0].do_wait_suspend(*args, **kwargs)
+  File "/home/user/tools/pycharm-community-2019.1.3/helpers/pydev/pydevd.py", line 889, in do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+
+2020/06/22 16:16:27-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/06/22 16:23:01-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/06/22 16:23:23-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.

@@ -1,0 +1,40 @@
+2020/06/09 18:17:52-ERROR: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 202, Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/py37_torch1.4/lib/python3.7/configparser.py", line 788, in get
+    value = d[option]
+  File "/home/user/anaconda3/envs/py37_torch1.4/lib/python3.7/collections/__init__.py", line 916, in __getitem__
+    return self.__missing__(key)            # support subclasses that define __missing__
+  File "/home/user/anaconda3/envs/py37_torch1.4/lib/python3.7/collections/__init__.py", line 908, in __missing__
+    raise KeyError(key)
+KeyError: 'h'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py", line 189, in <module>
+    'NL_config', idx)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/parse_data.py", line 239, in parse_conf
+    h_str = conf.get(filename, 'h')
+  File "/home/user/anaconda3/envs/py37_torch1.4/lib/python3.7/configparser.py", line 791, in get
+    raise NoOptionError(option, section)
+configparser.NoOptionError: No option 'h' in section: 'NL_config'
+
+2020/06/09 18:18:45-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/06/09 18:18:50-ERROR: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 202, Traceback (most recent call last):
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py", line 199, in <module>
+    cameraDetectionDemo(416, pls_xy, real_xy, Sensor_ID, udpClient, addr, cam_IP)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py", line 116, in cameraDetectionDemo
+    onnx2trt = OnnxTensorrtModule(init_dict)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/OnnxTensorrtModule.py", line 90, in __init__
+    self.inputs, self.outputs, self.bindings, self.stream = common.allocate_buffers(self.engine)
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/common.py", line 125, in allocate_buffers
+    for binding in engine:
+TypeError: 'NoneType' object is not iterable
+
+2020/06/09 18:18:50-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/06/09 18:19:06-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/06/09 18:20:18-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/06/09 18:20:24-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/06/09 18:20:28-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/06/09 18:20:37-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/06/09 18:21:21-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/06/09 18:21:31-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.

@@ -1,0 +1,37 @@
+2020/04/24 10:01:12-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 99, Detect Thread stop.
+2020/04/24 10:01:12-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 130, FrameReadLoop thread stop.
+2020/04/24 10:01:30-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 172, heartbeat thread stop.
+2020/04/24 10:02:53-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:02:58-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:03:04-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:03:10-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:03:16-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:03:21-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 99, Detect Thread stop.
+2020/04/24 10:03:21-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 130, FrameReadLoop thread stop.
+2020/04/24 10:03:36-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 172, heartbeat thread stop.
+2020/04/24 10:05:32-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:06:42-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:07:09-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 99, Detect Thread stop.
+2020/04/24 10:07:09-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 130, FrameReadLoop thread stop.
+2020/04/24 10:07:59-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 99, Detect Thread stop.
+2020/04/24 10:07:59-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 130, FrameReadLoop thread stop.
+2020/04/24 10:09:07-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:09:14-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:09:22-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:09:29-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 116, try to cap the camera
+2020/04/24 10:09:34-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 99, Detect Thread stop.
+2020/04/24 10:09:34-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 130, FrameReadLoop thread stop.
+2020/04/24 10:14:23-ERROR: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 95, Traceback (most recent call last):
+  File "/home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py", line 83, in run
+    cv2.write('/home/user/yy/data/test.jpg', frame)
+AttributeError: module 'cv2.cv2' has no attribute 'write'
+
+2020/04/24 10:14:23-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 102, Detect Thread stop.
+2020/04/24 10:14:23-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 133, FrameReadLoop thread stop.
+2020/04/24 10:15:07-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 119, try to cap the camera
+2020/04/24 10:15:10-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 102, Detect Thread stop.
+2020/04/24 10:15:10-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 133, FrameReadLoop thread stop.
+2020/04/24 10:16:35-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 102, Detect Thread stop.
+2020/04/24 10:16:35-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 134, FrameReadLoop thread stop.
+2020/04/24 10:17:29-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 102, Detect Thread stop.
+2020/04/24 10:17:29-INFO: /home/user/yy/workspace/CameraUI_TensorRT_workspace/CameraUI_TensorRT_Geely/Run_TensorRT_NoUI_TOFusion.py, line 135, FrameReadLoop thread stop.

@@ -1,0 +1,176 @@
+2020/07/06 18:43:24-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 18:46:29-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 18:46:32-ERROR: Run_TensorRT_NoUI_TORSU.py, line 202, Traceback (most recent call last):
+  File "Run_TensorRT_NoUI_TORSU.py", line 199, in <module>
+    cameraDetectionDemo(416, pls_xy, real_xy, jsonName, Sensor_ID, udpClient, addr, cam_IP)
+  File "Run_TensorRT_NoUI_TORSU.py", line 155, in cameraDetectionDemo
+    rgb_image, outputs_tracking = video_demo(frame, dim, pls, onnx2trt, deepsort, classes, colors, h_inv)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/detection.py", line 200, in video_demo
+    output = onnx2trt.detect_thread(frame, img)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/OnnxTensorrtModule.py", line 142, in detect_thread
+    dets = dynamic_write_results(detections, 0.4, self.num_classes, nms=True, nms_conf=0.4)  # 0.008
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/util2.py", line 148, in dynamic_write_results
+    dets = write_results2(prediction.clone(), confidence, num_classes, nms, nms_conf)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/util2.py", line 378, in write_results2
+    max_conf, max_conf_score = torch.max(image_pred[:, 5:5 + num_classes], axis = 1)  # n
+TypeError: max() received an invalid combination of arguments - got (Tensor, axis=int), but expected one of:
+ * (Tensor input)
+ * (Tensor input, Tensor other, Tensor out)
+ * (Tensor input, int dim, bool keepdim, tuple of Tensors out)
+
+
+2020/07/06 18:46:32-INFO: Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/07/06 18:49:03-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 18:49:16-ERROR: Run_TensorRT_NoUI_TORSU.py, line 202, Traceback (most recent call last):
+  File "Run_TensorRT_NoUI_TORSU.py", line 199, in <module>
+    cameraDetectionDemo(416, pls_xy, real_xy, jsonName, Sensor_ID, udpClient, addr, cam_IP)
+  File "Run_TensorRT_NoUI_TORSU.py", line 155, in cameraDetectionDemo
+    rgb_image, outputs_tracking = video_demo(frame, dim, pls, onnx2trt, deepsort, classes, colors, h_inv)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/detection.py", line 200, in video_demo
+    output = onnx2trt.detect_thread(frame, img)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/OnnxTensorrtModule.py", line 142, in detect_thread
+    dets = dynamic_write_results(detections, 0.4, self.num_classes, nms=True, nms_conf=0.4)  # 0.008
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/util2.py", line 148, in dynamic_write_results
+    dets = write_results2(prediction.clone(), confidence, num_classes, nms, nms_conf)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/util2.py", line 378, in write_results2
+    max_conf, max_conf_score = torch.max(image_pred[:, 5:5 + num_classes], axis = 1)  # n
+TypeError: max() received an invalid combination of arguments - got (Tensor, axis=int), but expected one of:
+ * (Tensor input)
+ * (Tensor input, Tensor other, Tensor out)
+ * (Tensor input, int dim, bool keepdim, tuple of Tensors out)
+
+
+2020/07/06 18:49:16-INFO: Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/07/06 18:54:07-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 18:54:30-ERROR: Run_TensorRT_NoUI_TORSU.py, line 202, Traceback (most recent call last):
+  File "Run_TensorRT_NoUI_TORSU.py", line 199, in <module>
+    cameraDetectionDemo(416, pls_xy, real_xy, jsonName, Sensor_ID, udpClient, addr, cam_IP)
+  File "Run_TensorRT_NoUI_TORSU.py", line 155, in cameraDetectionDemo
+    rgb_image, outputs_tracking = video_demo(frame, dim, pls, onnx2trt, deepsort, classes, colors, h_inv)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/detection.py", line 200, in video_demo
+    output = onnx2trt.detect_thread(frame, img)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/OnnxTensorrtModule.py", line 142, in detect_thread
+    dets = dynamic_write_results(detections, 0.4, self.num_classes, nms=True, nms_conf=0.4)  # 0.008
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/util2.py", line 148, in dynamic_write_results
+    dets = write_results2(prediction.clone(), confidence, num_classes, nms, nms_conf)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/util2.py", line 379, in write_results2
+    max_conf, max_conf_score = torch.max(image_pred[:, 5:5 + num_classes], axis = 1)  # n
+TypeError: max() received an invalid combination of arguments - got (Tensor, axis=int), but expected one of:
+ * (Tensor input)
+ * (Tensor input, Tensor other, Tensor out)
+ * (Tensor input, int dim, bool keepdim, tuple of Tensors out)
+
+
+2020/07/06 18:54:30-INFO: Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/07/06 19:01:16-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 19:01:52-INFO: Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/07/06 19:04:31-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 19:04:44-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:04:46-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:04:47-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:04:49-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:04:51-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:04:52-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:04:54-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:04:56-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:04:57-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:04:59-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:01-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:02-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:04-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:06-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:07-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:09-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:11-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:12-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:14-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:16-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:17-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:19-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:21-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:22-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:24-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:26-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:05:26-INFO: Run_TensorRT_NoUI_TORSU.py, line 51, try failure
+2020/07/06 19:05:26-INFO: Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/07/06 19:06:07-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 19:06:20-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:22-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:23-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:25-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:27-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:28-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:30-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:32-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:34-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:35-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:37-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:39-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:40-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:42-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:06:43-INFO: Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/07/06 19:07:31-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 19:07:44-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:07:46-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:07:48-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:07:49-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:07:51-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:07:53-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:07:54-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:07:56-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:07:58-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:07:59-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:01-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:03-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:05-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:06-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:08-INFO: Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/07/06 19:08:33-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 19:08:46-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:48-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:50-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:51-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:53-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:55-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:08:57-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:09:42-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 19:09:56-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:09:56-ERROR: Run_TensorRT_NoUI_TORSU.py, line 203, Traceback (most recent call last):
+  File "Run_TensorRT_NoUI_TORSU.py", line 200, in <module>
+    cameraDetectionDemo(416, pls_xy, real_xy, jsonName, Sensor_ID, udpClient, addr, cam_IP)
+  File "Run_TensorRT_NoUI_TORSU.py", line 155, in cameraDetectionDemo
+    rgb_image, outputs_tracking = video_demo(frame, dim, pls, onnx2trt, deepsort, classes, colors, h_inv)
+  File "/home/nvidia/yy/nebula/CameraUI_TensorRT_Geely/detection.py", line 264, in video_demo
+    return orig_im, outputs_tracking
+NameError: name 'outputs_tracking' is not defined
+
+2020/07/06 19:09:56-INFO: Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
+2020/07/06 19:10:11-INFO: Run_TensorRT_NoUI_TORSU.py, line 39, frame read thread is starting...
+2020/07/06 19:10:25-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:26-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:28-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:29-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:31-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:33-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:34-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:36-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:37-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:39-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:41-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:42-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:44-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:45-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:47-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:48-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:50-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:52-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:53-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:55-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:56-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:58-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:10:59-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:11:01-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:11:03-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:11:04-INFO: Run_TensorRT_NoUI_TORSU.py, line 48, try to cap the camera
+2020/07/06 19:11:04-INFO: Run_TensorRT_NoUI_TORSU.py, line 51, try failure
+2020/07/06 19:11:04-INFO: Run_TensorRT_NoUI_TORSU.py, line 67, FrameReadLoop thread stop.
